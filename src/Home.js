@@ -6,8 +6,8 @@ function Home() {
     <div className="home grid-2">
       <div className="gird1">
         <h2>Edukated</h2>
-        <div>
-          <ul>
+        <div className="nav-bar">
+          <ul className="nav-links">
             <li>Home</li>
             <li>Discover</li>
             <li>Messages</li>
