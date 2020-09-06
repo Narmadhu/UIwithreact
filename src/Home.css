@@ -2,14 +2,209 @@
   background-color: #f4f4f4;
   margin: 50px;
   padding: 20px;
+  border-radius: 20px;
+}
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 30% 70%;
 }
 
 .grid-2 {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+.content {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 65% 35%;
+}
+.grid1 {
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 1px solid rgb(228, 227, 227);
+}
+.grid2 {
+  padding: 30px;
 }
 
 ul {
   list-style: none;
+}
+ul li:first-child {
+  font-weight: bold;
+}
+
+img {
+  width: 40px;
+  height: 38px;
+  border-radius: 16px;
+  float: left;
+  margin: 18px;
+}
+button {
+  border: none;
+  outline: none;
+}
+.back-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.block {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.title {
+  color: orangered;
+}
+.nav-bar {
+  margin-top: 150px;
+  height: 250px;
+}
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+}
+
+.nav-links li span {
+  margin-left: 20px;
+}
+.nav-links li a:hover:first-child {
+  color: orangered;
+}
+.points {
+  margin-top: 150px;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+}
+.heading li span {
+  font-weight: lighter;
+}
+
+.streaming img {
+  border: 2px solid orangered;
+  padding: 3px;
+  margin-left: -1px;
+}
+
+.search-bar input {
+  width: 50%;
+  margin-left: 40px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-bar button {
+  margin-left: 18px;
+  padding: 10px;
+  width: 15%;
+  border-radius: 6px;
+  background-color: orangered;
+  color: white;
+}
+.popular-each button {
+  padding: 10px;
+  background-color: orangered;
+  color: white;
+  border-radius: 6px;
+  margin-left: 18px;
+}
+
+.popular-each {
+  background-color: violet;
+  height: 380px;
+  width: 220px;
+  border-radius: 20px;
+  color: white;
+  letter-spacing: 1px;
+}
+.first {
+  background-image: url("/images/img1.jpg");
+}
+.first .description {
+  background-color: rgb(2, 2, 121);
+  opacity: 0.8;
+}
+.second {
+  background-image: url("/images/img2.jpg");
+}
+.second .description {
+  background-color: brown;
+  opacity: 0.8;
+}
+.third {
+  background-image: url("/images/img3.jpg");
+}
+.third .description {
+  background-color: rgb(14, 82, 14);
+  opacity: 0.8;
+}
+.popular-each-grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.description {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 150px 10px 0 10px;
+  color: white;
+  line-height: 4vh;
+}
+
+.tutor-each {
+  position: relative;
+}
+.tutor-each button {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  border-radius: 50%;
+}
+.offer-img {
+  height: 200px;
+  background-image: url("/images/cake.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: center;
+  position: relative;
+  border-radius: 20px;
+}
+.offer-img ul {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  padding-left: 5px;
+}
+
+.offer-img ul li:first-child {
+  color: rgb(212, 119, 85);
+  font-weight: bolder;
+}
+.offer-img ul li:last-child {
+  color: rgb(96, 140, 155);
+  font-weight: bold;
+  font-size: small;
+}
+.offer button {
+  background-color: #f4f4f4;
+  padding: 10px;
+  color: orangered;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  border-radius: 10px;
 }
