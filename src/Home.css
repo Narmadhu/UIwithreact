@@ -1,8 +1,18 @@
+h2 {
+  display: inline;
+}
+h2:first-child {
+  background-color: rgb(228, 72, 15);
+  padding: 0 10px 6px 10px;
+  border-radius: 50%;
+  color: white;
+  margin-right: 20px;
+}
 .home {
-  background-color: #f4f4f4;
+  background-color: white;
   margin: 50px;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 .grid {
   display: grid;
@@ -32,6 +42,10 @@
 ul {
   list-style: none;
 }
+ul li a {
+  text-decoration: none;
+  color: grey;
+}
 ul li:first-child {
   font-weight: bold;
 }
@@ -53,14 +67,14 @@ button {
   background-size: cover;
 }
 .block {
-  background-color: white;
+  background-color: #f4f4f4;
   padding: 10px;
   margin: 10px;
   border-radius: 20px;
 }
 
 .title {
-  color: orangered;
+  color: rgb(228, 72, 15);
 }
 .nav-bar {
   margin-top: 150px;
@@ -98,25 +112,30 @@ button {
 }
 
 .search-bar input {
-  width: 50%;
+  background-color: #f4f4f4;
+  width: 56%;
   margin-left: 40px;
   border-radius: 10px;
   padding: 10px;
   border: none;
   outline: none;
+  height: 20px;
 }
 
 .search-bar button {
+  cursor: pointer;
   margin-left: 18px;
   padding: 10px;
   width: 15%;
   border-radius: 6px;
-  background-color: orangered;
+  background-color: rgb(228, 72, 15);
   color: white;
 }
-.popular-each button {
+.popular-each button,
+.popular-each-other button,
+.popular-each-third button {
   padding: 10px;
-  background-color: orangered;
+  background-color: rgb(228, 72, 15);
   color: white;
   border-radius: 6px;
   margin-left: 18px;
@@ -129,6 +148,29 @@ button {
   border-radius: 20px;
   color: white;
   letter-spacing: 1px;
+}
+.popular-each-third {
+  border-radius: 20px;
+  height: 190px;
+  width: 280px;
+  margin-top: -10px;
+}
+.popular-each-third p {
+  margin: 20px;
+}
+.popular-each-other {
+  position: relative;
+  border-radius: 20px;
+  margin-top: 14px;
+  height: 180px;
+  width: 140px;
+}
+.popular-each-other p {
+  position: absolute;
+  bottom: 5px;
+  width: 100px;
+  height: 40px;
+  padding-top: 1px;
 }
 .first {
   background-image: url("/images/img1.jpg");
@@ -149,6 +191,20 @@ button {
 }
 .third .description {
   background-color: rgb(14, 82, 14);
+  opacity: 0.8;
+}
+.fourth {
+  background-image: url("/images/img4.jpg");
+}
+.fourth .description {
+  background-color: rgb(187, 114, 31);
+  opacity: 0.8;
+}
+.fiveth {
+  background-image: url("/images/img5.jpg");
+}
+.fiveth .description {
+  background-color: rgb(235, 102, 124);
   opacity: 0.8;
 }
 .popular-each-grid1 {
@@ -172,6 +228,10 @@ button {
   top: 40px;
   right: 20px;
   border-radius: 50%;
+  background-color: white;
+  font-weight: lighter;
+  font-size: large;
+  cursor: pointer;
 }
 .offer-img {
   height: 200px;

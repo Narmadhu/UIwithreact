@@ -4,7 +4,6 @@ import {
   FaCog,
   FaFacebookMessenger,
   FaSearch,
-  //   FaBraille,
   FaCertificate,
   FaBatteryFull,
   FaThLarge,
@@ -15,13 +14,14 @@ function Home() {
   return (
     <div className="home grid">
       <div className="grid1">
+        <h2>e</h2>
         <h2>
           Edu<span className="title">kated</span>
         </h2>
         <nav className="nav-bar block">
           <ul className="nav-links">
             <li>
-              <a href="">
+              <a href="#">
                 <FaThLarge className="icon" /> <span> Home</span>
               </a>
             </li>
@@ -31,12 +31,12 @@ function Home() {
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#">
                 <FaFacebookMessenger /> <span>Messages</span>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#">
                 <FaCog /> <span> Settings</span>
               </a>
             </li>
@@ -55,7 +55,7 @@ function Home() {
         </div>
         <div className="grid-2 points">
           <div className="block">
-            <FaCertificate />
+            <FaCertificate color="green" style={{ marginLeft: "50px" }} />
             <ul>
               <li>
                 <span>1800</span>
@@ -66,7 +66,7 @@ function Home() {
             </ul>
           </div>
           <div className="block">
-            <FaBatteryFull />
+            <FaBatteryFull color="purple" style={{ marginLeft: "50px" }} />
             <ul>
               <li>
                 <span> 45.3%</span>
@@ -97,16 +97,16 @@ function Home() {
                 Streaming <span> Now</span>
               </li>
               <li>
-                <FaEllipsisH fontSize="30px" />
+                <FaEllipsisH fontSize="30px" color="#e0dfdf" />
               </li>
             </ul>
             <img src="/images/alex.jpg" alt="" />
-            <img src="/images/alex.jpg" alt="" />
-            <img src="/images/alex.jpg" alt="" />
-            <img src="/images/alex.jpg" alt="" />
-            <img src="/images/alex.jpg" alt="" />
-            <img src="/images/alex.jpg" alt="" />
-            <img src="/images/alex.jpg" alt="" />
+            <img src="/images/pic.jpg" alt="" />
+            <img src="/images/pic1.jpg" alt="" />
+            <img src="/images/pic2.jpg" alt="" />
+            <img src="/images/pic3.jpg" alt="" />
+            <img src="/images/pic4.jpg" alt="" />
+            <img src="/images/pic5.jpg" alt="" />
           </div>
           <div className="search">
             <ul className="heading">
@@ -114,7 +114,7 @@ function Home() {
                 Advanced<span> Search</span>
               </li>
               <li>
-                <FaEllipsisH fontSize="30px" />
+                <FaEllipsisH fontSize="30px" color="#e0dfdf" />
               </li>
             </ul>
             <div className="search-bar">
@@ -124,18 +124,16 @@ function Home() {
           </div>
         </div>
         <div className="popular">
-          <div>
-            <ul className="heading">
-              <li>
-                Popular <span>This Week</span>
-              </li>
-              <li>
-                {" "}
-                <FaEllipsisH fontSize="30px" />
-              </li>
-            </ul>
-          </div>
-          <div className="popular-grid grid-2 content">
+          <ul className="heading">
+            <li>
+              Popular <span>This Week</span>
+            </li>
+            <li>
+              <FaEllipsisH fontSize="30px" color="#e0dfdf" />
+            </li>
+          </ul>
+
+          <div className="popular-grid content">
             <div className="popular-each-grid1">
               <div className="popular-each first back-img">
                 <img src="/images/alex.jpg" alt="" />
@@ -172,11 +170,11 @@ function Home() {
               </div>
             </div>
             <div className="popular-each-grid2">
-              <div className="popular-each third back-img">
+              <div className="popular-each-third third back-img ">
                 <img src="/images/alex.jpg" alt="" />
                 <ul>
                   <li>
-                    <span>Lana Marandina</span>
+                    <span>Venkat</span>
                   </li>
                   <li>
                     <span>lana </span>
@@ -188,6 +186,36 @@ function Home() {
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
               </div>
+              <div className="grid-2  ">
+                <div className="popular-each-other fourth back-img ">
+                  <img src="/images/alex.jpg" alt="" />
+                  <ul>
+                    <li>
+                      <span>Lana </span>
+                    </li>
+                    <li>
+                      <span>lana </span>
+                    </li>
+                  </ul>
+                  <button>54 min</button>
+
+                  <p className="description">Lorem, ipsum dolor sit.</p>
+                </div>
+                <div className="popular-each-other fiveth back-img">
+                  <img src="/images/alex.jpg" alt="" />
+                  <ul>
+                    <li>
+                      <span>Lana</span>
+                    </li>
+                    <li>
+                      <span>lana </span>
+                    </li>
+                  </ul>
+                  <button>54 min</button>
+
+                  <p className="description">Lorem, ipsum dolor sit.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -198,7 +226,7 @@ function Home() {
                 Top <span>Tutors </span>
               </li>
               <li>
-                <FaEllipsisH fontSize="30px" />
+                <FaEllipsisH fontSize="30px" color="#e0dfdf" />
               </li>
             </ul>
             <div className="grid-2 ">
@@ -264,7 +292,7 @@ function Home() {
                 <span>Special Offers</span>
               </li>
               <li>
-                <FaEllipsisH fontSize="30px" />
+                <FaEllipsisH fontSize="30px" color="#e0dfdf" />
               </li>
             </ul>
 
