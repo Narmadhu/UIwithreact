@@ -14,10 +14,12 @@ function Home() {
   return (
     <div className="home grid">
       <div className="grid1">
-        <h2>e</h2>
-        <h2>
-          Edu<span className="title">kated</span>
-        </h2>
+        <div className="logo">
+          <h2>e</h2>
+          <h2>
+            Edu<span className="title">kated</span>
+          </h2>
+        </div>
         <nav className="nav-bar block">
           <ul className="nav-links">
             <li>

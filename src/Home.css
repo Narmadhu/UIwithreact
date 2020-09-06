@@ -1,3 +1,6 @@
+body {
+  font-family: cursive;
+}
 h2 {
   display: inline;
 }
@@ -7,6 +10,9 @@ h2:first-child {
   border-radius: 50%;
   color: white;
   margin-right: 20px;
+}
+.logo {
+  margin: 40px 0px 0px 20px;
 }
 .home {
   background-color: white;
@@ -33,7 +39,7 @@ h2:first-child {
 .grid1 {
   margin-right: 20px;
   padding-right: 20px;
-  border-right: 1px solid rgb(228, 227, 227);
+  border-right: 1px solid rgb(245, 242, 242);
 }
 .grid2 {
   padding: 30px;
@@ -94,7 +100,7 @@ button {
   color: orangered;
 }
 .points {
-  margin-top: 150px;
+  margin-top: 90px;
 }
 .heading {
   display: flex;
@@ -154,9 +160,22 @@ button {
   height: 190px;
   width: 280px;
   margin-top: -10px;
+  color: white;
+  position: relative;
+}
+.popular-each-third ul {
+  position: absolute;
+  left: 40px;
+}
+.popular-each-third button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 .popular-each-third p {
-  margin: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 .popular-each-other {
   position: relative;
@@ -164,6 +183,7 @@ button {
   margin-top: 14px;
   height: 180px;
   width: 140px;
+  color: white;
 }
 .popular-each-other p {
   position: absolute;
@@ -222,6 +242,7 @@ button {
 
 .tutor-each {
   position: relative;
+  margin-left: -10px;
 }
 .tutor-each button {
   position: absolute;
